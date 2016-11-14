@@ -1,0 +1,599 @@
+1 cabo de vassoura
+w 0 0 2 0
+
+2 espada quebrada
+w 0 0 3 0
+
+3 heranca de familia de um aventureiro falho(faca)
+w 1 0 2 0
+
+4 galho de uma arvore muito estranha
+w 0 0 0 2
+
+5 elmo furado
+h 1 2 0 0
+
+6 chapeu de palha brilhante
+h 1 0 0 1
+
+7 oculos escuros
+h 1 1 1 0
+
+8 gorro de borracha almofadado
+h 2 1 0 0
+
+9 camisa de couro
+c 2 1 0 0
+
+10 malha despedacada
+c 1 1 1 0
+
+11 saco de batatas
+c 1 1 0 0
+
+12 lata de lixo sem fundo
+c 1 2 0 0
+
+13 calca de couro
+l 2 1 0 0
+
+14 saia de malha
+l 1 1 1 0
+
+15 macacao de latao
+l 1 2 0 0
+
+16 joelheira velha
+l 0 2 1 0
+
+17 chinela de pau
+f 1 0 1 0
+
+18 bota de borracha
+f 2 1 0 0
+
+19 sapato metalico desconfortavel
+f 1 2 0 0
+
+20 botas de couro
+f 1 1 0 0
+
+21 espada de ferro
+w 1 0 5 0
+
+22 espelho da sereia
+w 1 0 0 5
+
+23 arpao de pesca
+w 2 0 4 0
+
+24 peixeira
+w 1 0 4 0
+
+25 casco de tarataruga
+h 2 4 0 0
+
+26 elmo de ferro
+h 3 3 0 0
+
+27 chapeu de pescador
+h 2 2 1 0
+
+28 gorro de couro de crocodilo
+h 4 2 0 0
+
+29 cota de malha
+c 2 3 1 0
+
+30 colete de pescador
+c 3 2 1 0
+
+31 rede de pesca
+c 2 2 0 0
+
+32 sutia de sereia
+c 3 1 0 2
+
+33 calca de pescador
+l 3 1 1 0
+
+34 armadura para pernas de ferro
+l 2 3 0 0
+
+35 calca de couro de crocodilo
+l 4 2 0 0
+
+36 tutu rosa de sereia
+l 3 1 0 1
+
+37 botas do pescador
+f 3 2 0 0
+
+38 botas misteriosas pescadas do fundo do lago
+f 3 1 0 3
+
+39 galochas grossas e altas
+f 2 3 0 0
+
+40 sapato muito confortavel
+f 2 2 1 0
+
+41 cimitarra
+w 2 1 8 0
+
+42 arco e flecha
+w 1 1 9 0
+
+43 cetro magico
+w 1 1 0 7
+
+44 pistola
+w 0 1 10 0
+
+45 capuz de ladrao
+h 5 4 1 0
+
+46 capacete de ferro
+h 6 5 1 0
+
+47 turbante magico
+h 7 4 0 1
+
+48 chapeu de mago
+h 5 4 0 2
+
+49 cota de placas
+c 5 7 2 0
+
+50 manto do ladrao
+c 7 4 2 0
+
+51 tunica nobre
+c 8 4 1 0
+
+52 armadura leve superior
+c 7 5 1 0
+
+53 tanguinha de texugo
+l 5 3 2 0
+
+54 parte inferior de um kimono
+l 6 4 1 0
+
+55 saia voodoo
+l 6 3 0 2
+
+56 armadura leve inferior
+l 5 5 1 0
+
+57 sapatos furtivos
+f 5 3 2 0
+
+58 botas de ferro de alta qualidade
+f 5 5 0 0
+
+59 sapatos leves do mago
+f 6 3 0 3
+
+60 botas para neve luxuosas
+f 8 3 1 0
+
+61 picareta raivosa
+w
+
+62 machado orquico
+w
+
+63 varinha sopradora de chamas
+w
+
+64 soqueiras elementais da terra
+w
+
+65 mascara da visao no escuro
+h
+
+66 elmo inteligente de minerador
+h
+
+67 elmo anti-sussurros
+h
+
+68 par de chifres demoniacos
+h
+
+69 cota demoniaca
+c
+
+70 casaco elemental da terra
+c
+
+71 armadura de exoesqueleto
+c
+
+72 ombreiras velhas do minerador
+c
+
+73 perneiras de exoesqueleto
+l
+
+74 calcas elementais da terra
+l
+
+75 perneiras demoniacas
+l
+
+76 calcas velhas do minerador
+l
+
+77 botas inteligentes do minerador
+f
+
+78 sandalias elementais da terra
+f
+
+79 botas anti-pragas
+f
+
+80 botas demoniacas
+f
+
+81 vampire slayer(pistola)
+w
+
+82 espada fantasma
+w
+
+83 vassoura de bruxa
+w
+
+84 florete vampirico
+w
+
+85 elmo assombrado
+h
+
+86 capuz vampirico
+h
+
+87 coroa de chamas
+h
+
+88 pano de uma terra distante
+h
+
+89 manto vampirico
+c
+
+90 vestido sombrio de empregada
+c
+
+91 cota assombrada
+c
+
+92 ombreiras do gargula
+c
+
+93 perneiras fantasmas
+l
+
+94 calca de lobisomem
+l
+
+95 calcas vampiricas
+l
+
+96 meia-calca sombria de empregada
+l
+
+97salto sombrio da empregada
+f
+
+98botina anti-ectoplasma
+f
+
+99 bota de ferro assombrada
+f
+
+100 sapato vampirico
+f
+
+101 cajado demoniaco
+w 
+
+102 estilingue selvagem goblinico
+w 
+
+103 machadinhas brutas
+w 
+
+104 lanca goblinica da realeza
+w 
+
+105 mini cora do rei
+h
+
+106 mini mascara voodoo
+h
+
+107 cranio de lobo
+h
+
+108 elmo goblin do deus da caca
+h
+
+109 ombreiras xamanicas goblins
+c
+
+110 peitoral da agilidade
+c
+
+111 cota de placa da protecao
+c
+
+112 manta dryad
+c
+
+113 calca bufante da danca da chuva
+l
+
+114 grande tanga da ferocidade
+l
+
+115 saiote de seda das fadas
+l
+
+116 protecao goblinica inferior de caca
+l
+
+117 sapatos goblinicos de caca
+f
+
+118 botas resistentes ao calor
+f
+
+119 grevas do berserker
+f
+
+120 passo das moncoes
+f
+
+121 a ghosthunter(pa)
+w
+
+122 cross-purifier(espada)
+w
+
+123 coracao de ente
+w
+
+124 pique do comando
+w
+
+125 capuz das trevas
+h
+
+126 mitra sagrada
+h
+
+127 elmo de ossos
+h
+
+128 mandibula metalica
+h
+
+129 bata sagrada
+c
+
+130 cota de ossos
+c
+
+131 manto das trevas
+c
+
+132 sobre-tudo anti-ectoplasma
+c
+
+133 perneiras de ossos
+l
+
+134 calca anti-ectoplasma
+l
+
+135 saiao sagrado
+l
+
+136 saiao das trevas
+l
+
+137 andar do trovao(sapatos)
+f
+
+138 sandalias sagradas
+f
+
+139 botas das trevas
+f
+
+140 grevas de ossos
+f
+
+141 foe-slayer(foice)
+w
+
+142 flameborn(espada)
+w
+
+143 cimitarra demoniaca
+w
+
+144 cajado do deus da morte
+w
+
+145 mascara do necromante
+h
+
+146 elmo do heroi
+h
+
+147 caveira demoniaca
+h
+
+148 elmo sombrio elfico
+h
+
+149 cota do heroi
+c
+
+150 manto do necromante
+c
+
+151 ombreiras demomniacas
+c
+
+152 armadura leve sombria elfica
+c
+
+153 saiao do necromante
+l
+
+154 perneiras do heroi
+l
+
+155 calcas demoniacas
+l
+
+156 calca leve sombria elfica
+l
+
+157 sapatos do necromante
+f
+
+158 sapatos do heroi
+f
+
+159 botas demoniacas
+f
+
+160 darkstep(bota)
+f
+
+161 espada curta furtiva
+w
+
+162 arco espectral
+w
+
+163 cetro ocular do beholder
+w
+
+164 alabarda sismica
+w
+
+165 balaclava da invisibilidade
+h
+
+166 chapeu magico beholder
+h
+
+167 capuz de fantasmificacao
+h
+
+168 sombrero do aventureiro
+h
+
+169 poncho do aventureiro
+c
+
+170 colant da invisibilidade superior
+c
+
+171 kimono de fantasmificacao
+c
+
+172 manto das harpias
+c
+
+173 colant da inivisibilidade inferior
+l
+
+174 saia-calca de fantasmificacao
+l
+
+175 bombacha do aventureiro
+l
+
+176 calca dos faunos
+l
+
+177 esporao do aventureiro
+f
+
+178 geta de fantasmificacao
+f
+
+179 sapatilha da invisibilidade
+f
+
+180 botas metalicas dos anoes
+f
+
+181 dragonslayer(espada)
+w
+
+182 varinha da visao draconica
+w
+
+183 lanca de dente de dragao
+w
+
+184 soqueira draconica
+w
+
+185 elmo de forja draconica
+h
+
+186 capuz de escamas de dragao
+h
+
+187 balaclava a prova de fogo
+h
+
+188 capacete de ossos de dragao
+h
+
+189 cota de forja draconica
+c
+
+190 camisa de escamas de dragao
+c
+
+191 manto a prova de fogo
+c
+
+192 cota de ossos de dragao
+c
+
+193 perneiras de forja draconica
+l
+
+194 calcas de escamas de dragao
+l
+
+195 saiao a prova de fogo
+l
+
+196 escarcela de ossos de dragao
+l
+
+197 sapatos de forja draconica
+f
+
+198 botas de escamas de dragao
+f
+
+199 botas a prova de fogo
+f
+
+200 dragonkicker (sapato)
+f

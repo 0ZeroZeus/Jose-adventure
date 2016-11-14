@@ -1,0 +1,59 @@
+161 espada curta furtiva
+w
+
+162 arco espectral
+w
+
+163 cetro ocular do beholder
+w
+
+164 alabarda sismica
+w
+
+165 balaclava da invisibilidade
+h
+
+166 chapeu magico beholder
+h
+
+167 capuz de fantasmificacao
+h
+
+168 sombrero do aventureiro
+h
+
+169 poncho do aventureiro
+c
+
+170 colant da invisibilidade superior
+c
+
+171 kimono de fantasmificacao
+c
+
+172 manto das harpias
+c
+
+173 colant da inivisibilidade inferior
+l
+
+174 saia-calca de fantasmificacao
+l
+
+175 bombacha do aventureiro
+l
+
+176 calca dos faunos
+l
+
+177 esporao do aventureiro
+f
+
+178 geta de fantasmificacao
+f
+
+179 sapatilha da invisibilidade
+f
+
+180 botas metalicas dos anoes
+f

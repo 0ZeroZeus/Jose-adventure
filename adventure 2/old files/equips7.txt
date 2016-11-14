@@ -1,0 +1,58 @@
+121 a ghosthunter(pa)
+w
+
+122 cross-purifier(espada)
+w
+
+123 coracao de ente
+w
+
+124 pique do comando
+w
+
+125 capuz das trevas
+h
+
+126 mitra sagrada
+h
+
+127 elmo de ossos
+h
+
+128 mandibula metalica
+h
+
+129 bata sagrada
+c
+
+130 cota de ossos
+c
+
+131 manto das trevas
+c
+
+132 sobre-tudo anti-ectoplasma
+c
+
+133 perneiras de ossos
+l
+
+134 calca anti-ectoplasma
+l
+
+135 saiao sagrado
+l
+
+136 saiao das trevas
+l
+
+137 andar do trovao(sapatos)
+f
+
+138 sandalias sagradas
+f
+
+139 botas das trevas
+f
+
+140 grevas de ossos

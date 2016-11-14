@@ -1,0 +1,28 @@
+:Eh de manha, e Jose acorda com uma forte dor de cabeca 
+:Ele se levanta e vai comer o desejum com os pais, e na mesa revela
+:Jose: Pai, Mae, decidi me tornar um aventureiro!
+:Mae de Jose: filho isso eh muito perigoso!
+:Pai de Jose: para que isso garoto? Nao eh como se voce fosse ter sucesso nisso
+:Jose: eu decidi que quero criar o meu proprio futuro e nao herdar ele de voces
+:Mae de Jose: mas filho, com eu vou dormir tranquila sabendo que voce vai aparecer na porta de casa dentro de um saco
+:Pai de Jose: se acharem o corpo dele para trazer aqui ne
+:Jose: tenham mais fe em mim por favor! Eh o que eu decidi fazer por conta propria
+:Mae de Jose: beem, se voce coloca assim, tudo bem, mas pelo menos mantenha contato
+:Jose: mmm, mae, eu nao vou parar de morar aqui...
+:Pai de Jose: para mim tanto faz, so nao pegue os produtos da loja!
+:No horario do almoco, jose se encontra com o amigo como combinado dentro da Encrusilhada na mesma mesa de sempre
+:Jose: eles falaram que tudo bem!
+:Amigo de Jose:... eu acho que voce deveria se questionar se os seus pais realmente te querem por perto
+:Jose: isso nao importa, o importante eh que amanha eh o dia
+:Amigo de Jose: se voce tem tanta certeza, nao sou eu que vou te impedir
+:Amigo de Jose: so sugiro que comece por perto, como a floresta aqui do lado da vila, tem alguns aventureiros que vao la, dizem que a escuridao dentro dela eh sobrenatural
+:Jose: OK, boa ideia, eh pra la que eu vou!
+:Nesse dia, jose embarcou na grande aventura da vida dele
+-----------------------------------------
+:Todo dia jose escolhe sair para combater monstros ou ir para a teverna,
+:combatendo monstros ele pode aumentar de nivel e/ou ganhar equipamentos que o deixarao mais forte,
+:conforme jose ganha niveis, a presenca e o nome dele vao ficando conhecidos na taverna.
+:O maior nivel que jose pode alcancar eh o lvl 10, portanto, haverao areas de nivel 1 ao 10.
+:Cada vez que matar um monstro, Jose tera a opcao de encerrar o dia por ali, ao encerrar o dia jose recuperara todo o seu HP.
+:Caso morra, jose perdera todo seu equipamento e voltara para o nivel 1.
+:Boa Sorte, jose conta com voce.

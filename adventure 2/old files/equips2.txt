@@ -1,0 +1,59 @@
+21 espada de ferro
+w 1 0 5 0
+
+22 espelho da sereia
+w 1 0 0 5
+
+23 arpao de pesca
+w 2 0 4 0
+
+24 peixeira
+w 1 0 4 0
+
+25 casco de tarataruga
+h 2 4 0 0
+
+26 elmo de ferro
+h 3 3 0 0
+
+27 chapeu de pescador
+h 2 2 1 0
+
+28 gorro de couro de crocodilo
+h 4 2 0 0
+
+29 cota de malha
+c 2 3 1 0
+
+30 colete de pescador
+c 3 2 1 0
+
+31 rede de pesca
+c 2 2 0 0
+
+32 sutia de sereia
+c 3 1 0 2
+
+33 calca de pescador
+l 3 1 1 0
+
+34 armadura para pernas de ferro
+l 2 3 0 0
+
+35 calca de couro de crocodilo
+l 4 2 0 0
+
+36 tutu rosa de sereia
+l 3 1 0 1
+
+37 botas do pescador
+f 3 2 0 0
+
+38 botas misteriosas pescadas do fundo do lago
+f 3 1 0 3
+
+39 galochas grossas e altas
+f 2 3 0 0
+
+40 sapato muito confortavel
+f 2 2 1 0

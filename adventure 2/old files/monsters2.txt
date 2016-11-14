@@ -1,0 +1,14 @@
+sapo_venenoso
+f 3 4 11 0
+crocodilo
+f 5 4 12 0
+piton
+f 4 5 11 0
+tentaculo
+f 3 5 12 0
+sereia
+m 6 4 0 8
+pescador encantado
+f 5 5 11 0
+reflexo (chefe)
+f 9 5 16 0

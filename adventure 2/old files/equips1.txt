@@ -1,0 +1,59 @@
+1 cabo de vassoura
+w 0 0 2 0
+
+2 espada quebrada
+w 0 0 3 0
+
+3 heranca de familia de um aventureiro falho(faca)
+w 1 0 2 0
+
+4 galho de uma arvore muito estranha
+w 0 0 0 2
+
+5 elmo furado
+h 1 2 0 0
+
+6 chapeu de palha brilhante
+h 1 0 0 1
+
+7 oculos escuros
+h 1 1 1 0
+
+8 gorro de borracha almofadado
+h 2 1 0 0
+
+9 camisa de couro
+c 2 1 0 0
+
+10 malha despedacada
+c 1 1 1 0
+
+11 saco de batatas
+c 1 1 0 0
+
+12 lata de lixo sem fundo
+c 1 2 0 0
+
+13 calca de couro
+l 2 1 0 0
+
+14 saia de malha
+l 1 1 1 0
+
+15 macacao de latao
+l 1 2 0 0
+
+16 joelheira velha
+l 0 2 1 0
+
+17 chinela de pau
+f 1 0 1 0
+
+18 bota de borracha
+f 2 1 0 0
+
+19 sapato metalico desconfortavel
+f 1 2 0 0
+
+20 botas de couro
+f 1 1 0 0

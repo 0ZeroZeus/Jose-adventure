@@ -1,0 +1,59 @@
+141 foe-slayer(foice)
+w
+
+142 flameborn(espada)
+w
+
+143 cimitarra demoniaca
+w
+
+144 cajado do deus da morte
+w
+
+145 mascara do necromante
+h
+
+146 elmo do heroi
+h
+
+147 caveira demoniaca
+h
+
+148 elmo sombrio elfico
+h
+
+149 cota do heroi
+c
+
+150 manto do necromante
+c
+
+151 ombreiras demomniacas
+c
+
+152 armadura leve sombria elfica
+c
+
+153 saiao do necromante
+l
+
+154 perneiras do heroi
+l
+
+155 calcas demoniacas
+l
+
+156 calca leve sombria elfica
+l
+
+157 sapatos do necromante
+f
+
+158 sapatos do heroi
+f
+
+159 botas demoniacas
+f
+
+160 darkstep(bota)
+f

@@ -1,0 +1,14 @@
+goblin
+f
+goblin xama
+m
+goblin cacador
+f
+hobgoblin
+f
+goblin berserker
+f
+governanta goblin
+f
+goblin rei(chefe)
+f
