@@ -25,9 +25,9 @@ int main(){
 
     int escolha=0;
     int opcao;
+    srand(time(NULL));
 
-
-    jogador jose();
+    jogador jose = jogador();
 
     while(escolha != 4){
 
@@ -37,12 +37,12 @@ int main(){
 
             case 1:
 
-                modo_campanha(&jose);
+                modo_campanha(jose);
 
                 break;
             case 2:
                 system("clear");
-                aventura(&jose);
+                aventura(jose);
 
                 break;
             case 3:
