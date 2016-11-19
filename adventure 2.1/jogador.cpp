@@ -54,8 +54,8 @@ void jogador::monta_personagem(){
 
     FILE* status;
     int existe;
-    char checa_tipo;
-    int temp_gear[5];
+    item temp();
+    int gearID[5];
 
     status= fopen("status_basicos.txt","r");
     if(status == NULL) {
@@ -78,10 +78,10 @@ void jogador::monta_personagem(){
     fscanf(status, "1 %d %d %d %d %d %d",&nivel, &exp, &vida, &armor, &dano, &dano_magico);
     fscanf(status, "%d %d %d %d %d %d %d %d %d %d\n", &boss[0], &boss[1], &boss[2], &boss[3], &boss[4], &boss[5], &boss[6], &boss[7], &boss[8], &boss[9]);
     fscanf(status, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", &quest[0], &quest[1], &quest[2], &quest[3], &quest[4], &quest[5], &quest[6], &quest[7], &quest[8], &quest[9], &quest[10], &quest[11], &quest[12], &quest[13], &quest[14]);
-    fscanf(status, "%d %d %d %d %d\n", &temp_gear[0], &temp_gear[1], &temp_gear[2], &temp_gear[3], &temp_gear[4]);
+    fscanf(status, "%d %d %d %d %d\n", &gearID[0], &gearID[1], &gearID[2], &gearID[3], &gearID[4]);
 
     for(int i = 0; i < 5; i++){
-        gear[i].encontra_item[temp_gear[i]];
+        setItem(temp.encontra_item[gearID[i]]);
     }
 
     fclose(status);
@@ -95,16 +95,22 @@ void jogador::lvlUp(int vidaUP, int armorUP, int danoUP){
     armor += armorUP;
     dano += danoUP;
 
+    update();
 }
 
 void jogador::update(){
 
-    for(int i = 0; i < 5; i++){
+    vida_total = vida;
+    armor_total = armor;
+    dano_total = dano;
+    dano_magico_total = dano_magico;
 
-        vida_total += gear[i].vida;
-        armor_total += gear[i].armor;
-        dano_total += gear[i].dano;
-        dano_magico_total += gear[i].dano_magico;
+    for(int cont = 0; cont < 5; cont++){
+
+        vida_total += gear[cont].vida;
+        armor_total += gear[cont].armor;
+        dano_total += gear[cont].dano;
+        dano_magico_total += gear[cont].dano_magico;
     }
 
 }
@@ -132,7 +138,7 @@ void jogador::save(){
 
 void jogador::kill(){
 
-    nivel=1;
+    nivel=0;
     exp=0;
     vida=0;
     armor=0;
@@ -143,4 +149,64 @@ void jogador::kill(){
     for(int i = 0; i < 5; i++){
         gear[i].encontra_item[0];
     }
+}
+
+bool jogador::giveExp(int exp){
+
+    int soma=0;
+
+    experiencia += exp;
+
+    for(int cont=nivel; cont>0; cont--){
+
+        soma += cont*100;
+    }
+
+    if(expericencia >= soma)
+        return(true);
+    else
+        return(false);
+
+}
+
+int getNivel(){
+
+    return(nivel);
+}
+
+int getExperience(){
+
+    return(experience);
+}
+
+int getVida(){
+
+    return(vida);
+}
+
+int getArmor(){
+
+    return(armor);
+}
+
+int getDano(){
+
+    return(dano);
+}
+
+int getDano_magico(){
+
+    return(dano_magico);
+}
+
+void jogador::setItem(item novo){
+
+    gear[novo.tipo] = novo;
+    update();
+
+}
+
+item jogador::getItem(int tipoItem){
+
+    return(gear[tipoItem]);
 }
