@@ -1,0 +1,14 @@
+wyvern
+f
+dragao filhote
+f
+dragao da terra
+f
+dragonoide
+f
+dragao fada arco iris
+m
+dragao generico
+f
+dragao imperador escarlate de tres cabecas(chefe)
+f

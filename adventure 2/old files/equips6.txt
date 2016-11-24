@@ -1,0 +1,59 @@
+101 cajado demoniaco
+w 
+
+102 estilingue selvagem goblinico
+w 
+
+103 machadinhas brutas
+w 
+
+104 lanca goblinica da realeza
+w 
+
+105 mini cora do rei
+h
+
+106 mini mascara voodoo
+h
+
+107 cranio de lobo
+h
+
+108 elmo goblin do deus da caca
+h
+
+109 ombreiras xamanicas goblins
+c
+
+110 peitoral da agilidade
+c
+
+111 cota de placa da protecao
+c
+
+112 manta dryad
+c
+
+113 calca bufante da danca da chuva
+l
+
+114 grande tanga da ferocidade
+l
+
+115 saiote de seda das fadas
+l
+
+116 protecao goblinica inferior de caca
+l
+
+117 sapatos goblinicos de caca
+f
+
+118 botas resistentes ao calor
+f
+
+119 grevas do berserker
+f
+
+120 passo das moncoes
+f

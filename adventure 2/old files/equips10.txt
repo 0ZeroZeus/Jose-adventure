@@ -1,0 +1,59 @@
+181 dragonslayer(espada)
+w
+
+182 varinha da visao draconica
+w
+
+183 lanca de dente de dragao
+w
+
+184 soqueira draconica
+w
+
+185 elmo de forja draconica
+h
+
+186 capuz de escamas de dragao
+h
+
+187 balaclava a prova de fogo
+h
+
+188 capacete de ossos de dragao
+h
+
+189 cota de forja draconica
+c
+
+190 camisa de escamas de dragao
+c
+
+191 manto a prova de fogo
+c
+
+192 cota de ossos de dragao
+c
+
+193 perneiras de forja draconica
+l
+
+194 calcas de escamas de dragao
+l
+
+195 saiao a prova de fogo
+l
+
+196 escarcela de ossos de dragao
+l
+
+197 sapatos de forja draconica
+f
+
+198 botas de escamas de dragao
+f
+
+199 botas a prova de fogo
+f
+
+200 dragonkicker (sapato)
+f

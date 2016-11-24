@@ -1,0 +1,230 @@
+1001 gosma_generica 
+f 1 1 2 0
+5 11 10 16
+
+1002 larva_gigante 
+f 3 1 2 0
+2 8 11 18
+
+1003 cobra 
+f 3 1 3 0
+1 7 13 20
+
+1004 coelho_maldito 
+m 2 2 0 2
+4 6 7 19
+
+1005 rato_gigante 
+f 4 2 1 0
+1 9 12 15
+
+1006 macaco 
+f 4 1 2 0
+2 14 15 17
+
+1007 lobo(chefe) 
+f 4 2 3 0
+3 4 6 14
+
+2001 sapo_venenoso
+f 3 4 11 0
+24 25 32 40
+
+2002 crocodilo
+f 5 4 12 0
+21 28 35 39
+
+2003 piton
+f 4 5 11 0
+26 27 31 40
+
+2004 tentaculo
+f 3 5 12 0
+23 25 29 38
+
+2005 sereia
+m 6 4 0 8
+22 32 36 38
+
+2006 pescador encantado
+f 5 5 11 0
+24 30 33 37
+
+2007 reflexo (chefe)
+f 9 5 16 0
+21 29 34 39
+
+3001 ladrao aspirante
+f 8 6 18 0
+45 50 53 60
+
+3002 ladrao mago
+m 10 7 0 11
+43 47 48 59
+
+3003 ladrao de armas
+f 9 6 19 0
+44 46 49 54
+
+3004 sequestrador
+f 10 6 21 0
+41 45 52 56
+
+3005 ladrao de riquezas
+f 8 8 18 0
+42 47 51 58
+
+3006 pirata perdido
+f 9 7 19 0
+44 52 55 56
+
+3007 ladrao que rouba ladrao(chefe)
+f 20 7 24 0
+42 50 57 60
+
+4001 toupeira gigante
+f 20 9 24 0
+
+4002 elemental da terra
+f 24 11 21 0
+
+4003 capetinha
+m 22 10 0 16
+
+4004 sangue suga gigante
+f 26 9 26 0
+
+4005 sombras susurrantes
+m 4 20 0 18
+
+4006 aranha gigante
+f 21 9 29 0
+
+4007 thoqqua(chefe)
+f 46 11 32 0
+
+5001 armadura ambulante
+f
+
+5002 flama viva
+m
+
+5003 empregada muito alterada
+f
+
+5004 morcego maldito
+f
+
+5005 bau assombrado flutuante com presas
+f
+
+5006 gargula
+f
+
+5007 lorde vampiro(chefe)
+f
+
+6001 goblin
+f
+
+6002 goblin xama
+m
+
+6003 goblin cacador
+f
+
+6004 hobgoblin
+f
+
+6005 goblin berserker
+f
+
+6006 governanta goblin
+f
+
+6007 goblin rei(chefe)
+f
+
+7001 fantasma
+m
+
+7002 metamorfo
+f
+
+7003 zumbi
+f
+
+7004 esqueleto
+f
+
+7005 coveiro possuido
+f
+
+7006 ente maculado
+f
+
+7007 poltergeist(chefe)
+m
+
+8001 necromante
+m
+
+8002 leech
+m
+
+8003 necro-lorde
+f
+
+8004 heroi re-animado
+f
+
+8005 golem de restos mortais
+f
+
+8006 servo demoniaco
+f
+
+8007 O ceifador, guardiao dos portoes da morte(chefe)
+f
+
+9001 lobisomem
+f
+
+9002 mestre da guilda de ladinos
+f
+
+9003 thoqqua
+f
+
+9004 lorde vampiro
+f
+
+9005 goblin rei
+f
+
+9006 poltergeist
+m
+
+9007 beholder(chefe)
+m
+
+10001 wyvern
+f
+
+10002 dragao filhote
+f
+
+10003 dragao da terra
+f
+
+10004 dragonoide
+f
+
+10005 dragao fada arco iris
+m
+
+10006 dragao generico
+f
+
+10007 dragao imperador escarlate de tres cabecas(chefe)
+f

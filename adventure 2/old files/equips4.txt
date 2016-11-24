@@ -1,0 +1,59 @@
+61 picareta raivosa
+w
+
+62 machado orquico
+w
+
+63 varinha sopradora de chamas
+w
+
+64 soqueiras elementais da terra
+w
+
+65 mascara da visao no escuro
+h
+
+66 elmo inteligente de minerador
+h
+
+67 elmo anti-sussurros
+h
+
+68 par de chifres demoniacos
+h
+
+69 cota demoniaca
+c
+
+70 casaco elemental da terra
+c
+
+71 armadura de exoesqueleto
+c
+
+72 ombreiras velhas do minerador
+c
+
+73 perneiras de exoesqueleto
+l
+
+74 calcas elementais da terra
+l
+
+75 perneiras demoniacas
+l
+
+76 calcas velhas do minerador
+l
+
+77 botas inteligentes do minerador
+f
+
+78 sandalias elementais da terra
+f
+
+79 botas anti-pragas
+f
+
+80 botas demoniacas
+f

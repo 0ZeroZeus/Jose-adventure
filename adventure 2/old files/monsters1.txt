@@ -1,0 +1,27 @@
+1001 gosma_generica 
+f 1 1 2 0
+5 11 10 16
+
+1002 larva_gigante 
+f 3 1 2 0
+2 8 11 18
+
+1003 cobra 
+f 3 1 3 0
+1 7 13 20
+
+1004 coelho_maldito 
+m 2 2 0 2
+4 6 7 19
+
+1005 rato_gigante 
+f 4 2 1 0
+1 9 12 15
+
+1006 macaco 
+f 4 1 2 0
+2 14 15 17
+
+1007 lobo(chefe) 
+f 4 2 3 0
+3 4 6 14

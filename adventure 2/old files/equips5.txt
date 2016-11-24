@@ -1,0 +1,59 @@
+81 vampire slayer(pistola)
+w
+
+82 espada fantasma
+w
+
+83 vassoura de bruxa
+w
+
+84 florete vampirico
+w
+
+85 elmo assombrado
+h
+
+86 capuz vampirico
+h
+
+87 coroa de chamas
+h
+
+88 pano de uma terra distante
+h
+
+89 manto vampirico
+c
+
+90 vestido sombrio de empregada
+c
+
+91 cota assombrada
+c
+
+92 ombreiras do gargula
+c
+
+93 perneiras fantasmas
+l
+
+94 calca de lobisomem
+l
+
+95 calcas vampiricas
+l
+
+96 meia-calca sombria de empregada
+l
+
+97salto sombrio da empregada
+f
+
+98botina anti-ectoplasma
+f
+
+99 bota de ferro assombrada
+f
+
+100 sapato vampirico
+f

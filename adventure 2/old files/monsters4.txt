@@ -1,0 +1,14 @@
+toupeira gigante
+f 20 9 24 0
+elemental da terra
+f 24 11 21 0
+capetinha
+m 22 10 0 16
+sangue suga gigante
+f 26 9 26 0
+sombras susurrantes
+m 4 20 0 18
+aranha gigante
+f 21 9 29 0
+thoqqua(chefe)
+f 46 11 32 0

@@ -1,0 +1,59 @@
+41 cimitarra
+w 2 1 8 0
+
+42 arco e flecha
+w 1 1 9 0
+
+43 cetro magico
+w 1 1 0 7
+
+44 pistola
+w 0 1 10 0
+
+45 capuz de ladrao
+h 5 4 1 0
+
+46 capacete de ferro
+h 6 5 1 0
+
+47 turbante magico
+h 7 4 0 1
+
+48 chapeu de mago
+h 5 4 0 2
+
+49 cota de placas
+c 5 7 2 0
+
+50 manto do ladrao
+c 7 4 2 0
+
+51 tunica nobre
+c 8 4 1 0
+
+52 armadura leve superior
+c 7 5 1 0
+
+53 tanguinha de texugo
+l 5 3 2 0
+
+54 parte inferior de um kimono
+l 6 4 1 0
+
+55 saia voodoo
+l 6 3 0 2
+
+56 armadura leve inferior
+l 5 5 1 0
+
+57 sapatos furtivos
+f 5 3 2 0
+
+58 botas de ferro de alta qualidade
+f 5 5 0 0
+
+59 sapatos leves do mago
+f 6 3 0 3
+
+60 botas para neve luxuosas
+f 8 3 1 0
