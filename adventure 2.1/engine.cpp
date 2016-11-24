@@ -1,221 +1,122 @@
+#include "engine.h"
 
-void premiacao(jogador * jose, int lvl, monstro derrotado){
-	
-	srand(time(NULL));
-	int se_dropou, upagem=0;
-	int temp_vida=0,temp_armor=0,temp_dano=0;
+void premiacao(jogador jose, int lvl, monstro derrotado){
 
-	jose->exp += lvl;
-	
-	switch(jose->nivel){
-		
-		case 1:
-			if(jose->exp > 100)
-				upagem=1;
-				
-			break;
-		case 2:
-			if(jose->exp > 300)
-				upagem=1;
-				
-			break;
-		case 3:			
-			if(jose->exp > 600)
-				upagem=1;
+    if(jose.giveExp(lvl))
+        lvlUP_Screen(jose);
 
-			break;
-		case 4:
-			if(jose->exp > 1000)
-				upagem=1;
-				
-			break;
-		case 5:
-			if(jose->exp > 1500)
-				upagem=1;
-
-			break;
-		case 6:
-			if(jose->exp > 2100)
-				upagem=1;
-				
-			break;
-		case 7:
-			if(jose->exp > 2800)
-				upagem=1;
-
-			break;
-		case 8:
-			if(jose->exp > 3600)
-				upagem=1;
-
-			break;
-		case 9:
-			if(jose->exp > 4500)
-				upagem=1;
-
-			break;
-	}
-	
-	while(upagem == 1){
-		
-		system("clear");
-		printf("Parabens, voce aumentou de nivel e ganhou 3 pontos de status novos\n");
-		
-		printf("quanto colocara em vida?\n");
-		scanf("%d", &temp_vida);
-		
-		printf("quanto colocara em armadura/defesa?\n");
-		scanf("%d", &temp_armor);
-		
-		printf("quanto colocara em dano?\n");
-		scanf("%d", &temp_dano);
-		
-		
-		if((temp_vida + temp_armor + temp_dano) > 3){
-			printf("nao trapaceie\n");
-		}	
-		else{
-			upagem=0;
-			jose->lvlUp(temp_vida, temp_armor, temp_dano);
-		}
-	}
-	
-	se_dropou= rand()%10;
-	if(se_dropou == 0){
-		item_drop(jose, derrotado);
-	}
-	
+    if((rand()%10) == 0)
+        item_drop(jose, derrotado);
 }
 
+void luta(jogador jose, monstro inimigo, int lvl){
 
-int luta(jogador* jose, monstro enemy){
-	
-	int opcao,dano_jose,dano_inimigo, fuga=0;
-	
-	srand(time(NULL));
-	system("clear");
-	
-	while(jose->vida_atual >0 && enemy.vida >0){
-		
-		printf("Jose\n\nSeu nivel: %d\nSua vida: %d\nSua armadura: %d\nSeu dano: %d\nSeu dano magico: %d\n\n", jose->nivel, jose->vida_atual, jose->armor_total, jose->dano_total, jose->dano_magico_total);
-		printf("%s\n\nVida do inimigo: %d\n", enemy.nome, enemy.vida);
-		
-		printf("Escolha o que fazer\n1 - atacar com sua arma\n2 - atacar com sua magia\n3 - fugir\n");
-		scanf("%d", &opcao);
-		
-		if(enemy.tipo == 'f')
-			dano_inimigo= (enemy.dano - jose->armor_total);
-		else if(enemy.tipo == 'm')
-			dano_inimigo= (enemy.dano_magico - (jose->armor_total/2));
-		
-		if(opcao == 1)
-			dano_jose= (jose->dano_total - enemy.armor);
-		else if(opcao == 2)
-			dano_jose= (jose->dano_magico_total - (enemy.armor/2));
-		else{
-			dano_jose=0;
-			fuga= rand()%2;
-			if(fuga == 1)
-				return(0);
-		}
-		
-		if(dano_inimigo < 1 && fuga ==0)
-			dano_inimigo=1;
-		
-		if(dano_jose < 1 && fuga ==0)
-			dano_jose=1;
-		
-		printf("Jose recebeu %d de dano\n", dano_inimigo);
-		printf("o inimigo recebeu %d de dano\n\n", dano_jose);
-		
-		jose->vida_atual -= dano_inimigo;
-		enemy.vida -= dano_jose;
-	}
-	
-	if(jose->vida_atual <= 0){
-		printf("voce morreu\nEspero que jogue novamente\n\n");
-		jose->kill;
-		return(0);
-	}
-	if(enemy.vida <= 0)
-		return(1);
+    int opcao,dano_jose,dano_inimigo, fuga=0;
+
+    system("clear");
+
+    while(jose.vida_atual >0 && inimigo.vida >0){
+
+        printf("Jose\n\nSeu nivel: %d\nSua vida: %d\nSua armadura: %d\nSeu dano: %d\nSeu dano magico: %d\n\n", jose.getNivel(), jose.vida_atual, jose.armor_total, jose.dano_total, jose.dano_magico_total);
+        printf("%s\n\nVida do inimigo: %d\n", inimigo.nome.c_str(), inimigo.vida);
+
+        printf("Escolha o que fazer\n1 - atacar com sua arma\n2 - atacar com sua magia\n3 - fugir\n");
+        scanf("%d", &opcao);
+
+        if(inimigo.tipo == 'f')
+            dano_inimigo= (inimigo.dano - jose.armor_total);
+        else if(inimigo.tipo == 'm')
+            dano_inimigo= (inimigo.dano_magico - (jose.armor_total/2));
+
+        if(opcao == 1)
+            dano_jose= (jose.dano_total - inimigo.armor);
+        else if(opcao == 2)
+            dano_jose= (jose.dano_magico_total - (inimigo.armor/2));
+        else{
+            dano_jose=0;
+            fuga= rand()%2;
+            if(fuga == 1)
+                return;
+        }
+
+        if(dano_inimigo < 1 && fuga ==0)
+            dano_inimigo=1;
+
+        if(dano_jose < 1 && fuga ==0)
+            dano_jose=1;
+
+        printf("Jose recebeu %d de dano\n", dano_inimigo);
+        printf("o inimigo recebeu %d de dano\n\n", dano_jose);
+
+        jose.vida_atual -= dano_inimigo;
+        inimigo.vida -= dano_jose;
+    }
+
+    if(jose.vida_atual <= 0){
+        printf("voce morreu\nEspero que jogue novamente\n\n");
+        jose.kill();
+    }
+    if(inimigo.vida <= 0)
+        premiacao(jose, lvl, inimigo);
 }
 
-int batalha(jogador* jose, int lvl){
-	
-	srand(time(NULL));
-	int random, resultado;
-	int ID=0;
-	
-	ID += lvl*1000;
+void batalha(jogador jose, int lvl){
 
-	random =rand()%(QNT_MONST-1);
-	random += 1;
-	ID += random;
+    int random;
+    int ID=0;
 
-	monstro inimigo(ID);
-	
-	resultado= luta(jose, inimigo);
-	
-	if(resultado){
-		premiacao(jose, lvl, inimigo);
-	}
-	
-	return(resultado);
+    ID += lvl*1000;
+
+    random =rand()%(QNT_MONST-1);
+    random += 1;
+    ID += random;
+
+    monstro inimigo = monstro(ID);
+
+    luta(jose, inimigo, lvl);
 }
 
-int batalha_boss(jogador* jose, int lvl){
-	
-	srand(time(NULL));
-	int random, resultado;
-	int ID=0;
-	
-	ID += lvl*1000;
-	ID += QNT_MONST;
+void batalha_boss(jogador jose, int lvl){
 
-	monstro inimigo(ID);
+    int ID=0;
 
-	resultado= luta(jose, inimigo);
-	
-	if(resultado){
-		jose->boss[lvl-1] = 1;
-		premiacao(jose, lvl, inimigo);
-	}
-	
-	return(resultado);
+    ID += lvl*1000;
+    ID += QNT_MONST;
+
+    monstro inimigo = monstro(ID);
+
+    luta(jose, inimigo, lvl);
+
+    if(jose.getNivel())
+        jose.boss[lvl-1] = 1;
 }
 
-void aventura(jogador* jose){
-	
-	int opcao_lugar=11;
-	int opcao_bat=1;
-	int opcao_boss;
-	jose->vida_atual=jose->vida_total;
-	
-	while(opcao_lugar > 10){
-		
-		exibe_locais(*jose);
-		scanf("%d", &opcao_lugar);
-		opcao_bat=opcao_lugar;
-	}
-	if(opcao_bat){	
-		printf("Deseja batalhar o chefe da fase?\nTecle 1 para sim e 0 para batalhar contra monstros menores\n");
-		scanf("%d", &opcao_boss);
-		if(opcao_boss){
-			batalha_boss(jose,opcao_lugar);
-			
-		}
-		else{
-			while(opcao_bat){
-				
-				printf("voce deseja entrar em uma batalha?\nTecle 1 para sim e 0 para nao\n");
-				scanf("%d", &opcao_bat);
-				
-				if(opcao_bat){
-					
-					opcao_bat= batalha(jose, opcao_lugar);	
-				}
-			}
-		}
-	}
+void aventura(jogador jose){
+
+    int opcao_lugar;
+    int opcao_bat=1;
+    int opcao_boss;
+    jose.vida_atual=jose.vida_total;
+
+        opcao_lugar = exibe_locais(jose);
+
+    if(opcao_bat){
+        printf("Deseja batalhar o chefe da fase?\nTecle 1 para sim e 0 para batalhar contra monstros menores\n");
+        scanf("%d", &opcao_boss);
+        if(opcao_boss){
+            batalha_boss(jose,opcao_lugar);
+
+        }
+        else{
+            while(opcao_bat){
+
+                printf("voce deseja entrar em uma batalha?\nTecle 1 para sim e 0 para nao\n");
+                scanf("%d", &opcao_bat);
+
+                if(opcao_bat){
+                    batalha(jose, opcao_lugar);
+                }
+            }
+        }
+    }
 }
