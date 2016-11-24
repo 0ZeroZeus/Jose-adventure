@@ -1,3 +1,5 @@
+#include "item.h"
+
 #ifndef MONSTRO_H
 #define MONSTRO_H
 

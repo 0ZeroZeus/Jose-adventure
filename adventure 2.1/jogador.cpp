@@ -1,3 +1,5 @@
+#include "jogador.h"
+
 using namespace std;
 
 jogador::jogador(){
@@ -34,7 +36,9 @@ void jogador::cria_personagem(){
 
         if((temp_vida + temp_armor + temp_dano -3) != pontos_totais){
             printf("Voce nao distribuiu corretamente, por favor, refaca\n\n");
-
+            temp_vida = 1;
+            temp_armor = 1;
+            temp_dano = 1;
         }
     }
 
@@ -54,44 +58,50 @@ void jogador::monta_personagem(){
 
     FILE* status;
     int existe;
-    item temp();
+    item temp;
     int gearID[5];
+
+    temp = item();
 
     status= fopen("status_basicos.txt","r");
     if(status == NULL) {
-        printf("\nNao foi possivel abrir o arquivo\n\n");
+        printf("\nNao foi possivel abrir o arquivo de status\n\n");
         getchar();
     }
 
     fscanf(status,"%d", &existe);
     if(existe == 0){
         fclose(status);
+
         cria_personagem();
+
+        status= fopen("status_basicos.txt","r");
+        if(status == NULL) {
+            printf("\nNao foi possivel abrir o arquivo de status\n\n");
+            getchar();
+        }
     }
 
-    status= fopen("status_basicos.txt","r");
-    if(status == NULL) {
-        printf("\nNao foi possivel abrir o arquivo\n\n");
-        getchar();
-    }
 
-    fscanf(status, "1 %d %d %d %d %d %d",&nivel, &exp, &vida, &armor, &dano, &dano_magico);
+    fscanf(status, "1 %d %d %d %d %d %d",&nivel, &experience, &vida, &armor, &dano, &dano_magico);
     fscanf(status, "%d %d %d %d %d %d %d %d %d %d\n", &boss[0], &boss[1], &boss[2], &boss[3], &boss[4], &boss[5], &boss[6], &boss[7], &boss[8], &boss[9]);
     fscanf(status, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", &quest[0], &quest[1], &quest[2], &quest[3], &quest[4], &quest[5], &quest[6], &quest[7], &quest[8], &quest[9], &quest[10], &quest[11], &quest[12], &quest[13], &quest[14]);
     fscanf(status, "%d %d %d %d %d\n", &gearID[0], &gearID[1], &gearID[2], &gearID[3], &gearID[4]);
 
     for(int i = 0; i < 5; i++){
-        setItem(temp.encontra_item[gearID[i]]);
+        temp.encontra_item(gearID[i]);
+        setItem(temp);
     }
 
     fclose(status);
+
 }
 
 void jogador::lvlUp(int vidaUP, int armorUP, int danoUP){
 
     nivel++;
-    exp = 0;
-    vida += vidaUp;
+    experience = 0;
+    vida += vidaUP;
     armor += armorUP;
     dano += danoUP;
 
@@ -126,7 +136,7 @@ void jogador::save(){
         return;
     }
 
-    fprintf(status,"1 %d %d %d %d %d %d\n\n", nivel, exp, vida, armor, dano, dano_magico);
+    fprintf(status,"1 %d %d %d %d %d %d\n\n", nivel, experience, vida, armor, dano, dano_magico);
     fprintf(status, "%d %d %d %d %d %d %d %d %d %d\n\n", boss[0], boss[1], boss[2], boss[3], boss[4], boss[5], boss[6], boss[7], boss[8], boss[9]);
     fprintf(status, "%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", quest[0], quest[1], quest[2], quest[3], quest[4], quest[5], quest[6], quest[7], quest[8], quest[9], quest[10], quest[11], quest[12], quest[13], quest[14]);
     fprintf(status, "%d %d %d %d %d\n", gear[0].id, gear[1].id, gear[2].id, gear[3].id, gear[4].id);
@@ -139,7 +149,7 @@ void jogador::save(){
 void jogador::kill(){
 
     nivel=0;
-    exp=0;
+    experience=0;
     vida=0;
     armor=0;
     dano=0;
@@ -147,7 +157,7 @@ void jogador::kill(){
     vida_atual=0;
 
     for(int i = 0; i < 5; i++){
-        gear[i].encontra_item[0];
+        gear[i].encontra_item(0);
     }
 }
 
@@ -155,46 +165,46 @@ bool jogador::giveExp(int exp){
 
     int soma=0;
 
-    experiencia += exp;
+    experience += exp;
 
     for(int cont=nivel; cont>0; cont--){
 
         soma += cont*100;
     }
 
-    if(expericencia >= soma)
+    if(experience >= soma)
         return(true);
     else
         return(false);
 
 }
 
-int getNivel(){
+int jogador::getNivel(){
 
     return(nivel);
 }
 
-int getExperience(){
+int jogador::getExperience(){
 
     return(experience);
 }
 
-int getVida(){
+int jogador::getVida(){
 
     return(vida);
 }
 
-int getArmor(){
+int jogador::getArmor(){
 
     return(armor);
 }
 
-int getDano(){
+int jogador::getDano(){
 
     return(dano);
 }
 
-int getDano_magico(){
+int jogador::getDano_magico(){
 
     return(dano_magico);
 }
@@ -210,3 +220,4 @@ item jogador::getItem(int tipoItem){
 
     return(gear[tipoItem]);
 }
+

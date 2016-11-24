@@ -1,3 +1,14 @@
+#define QNT_EQUIP 200
+#define QNT_MONST 7
+#define QNT_DROPS 4
+
+#include <iostream>
+#include <string>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 #ifndef ITEM_H
 #define ITEM_H
 

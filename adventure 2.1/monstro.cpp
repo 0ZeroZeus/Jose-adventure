@@ -1,3 +1,5 @@
+#include "monstro.h"
+
 using namespace std;
 
 monstro::monstro(int ID){

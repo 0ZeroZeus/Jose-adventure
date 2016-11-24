@@ -1,3 +1,5 @@
+#include "item.h"
+
 #ifndef JOGADOR_H
 #define JOGADOR_H
 

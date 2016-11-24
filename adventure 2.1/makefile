@@ -1,21 +1,21 @@
 all: programa
 
-programa: main.o Tela.o Pecas.o Engine.o Placar.o
-	g++ main.o Tela.o Pecas.o Engine.o Placar.o 
+programa: main.o item.o jogador.o monstro.o interface.o engine.o 
+	g++ main.o item.o jogador.o monstro.o interface.o engine.o 
 
-main.o: adventure2.1.cpp item.cpp jogador.cpp monstro.cpp interface.cpp engine.cpp
-	g++ -c adventure2.1.cpp
+main.o: main.cpp item.cpp jogador.cpp monstro.cpp interface.cpp engine.cpp
+	g++ -c main.cpp
 
-item.o: item.cpp Tela.h
+item.o: item.cpp item.h
 	g++ -c item.cpp
 
-jogador.o: jogador.cpp Pecas.h
+jogador.o: jogador.cpp jogador.h
 	g++ -c jogador.cpp
 
-mosntro.o: monstro.cpp mosntro.h
-	g++ -c mosntro.cpp
+monstro.o: monstro.cpp monstro.h
+	g++ -c monstro.cpp
 	
-interface.o: interface.c interface.h
+interface.o: interface.cpp interface.h
 	g++ -c interface.cpp
 
 engine.o: engine.cpp engine.h
